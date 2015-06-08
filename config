@@ -260,7 +260,7 @@
 #
 #      No trailing "/", please.
 #
-confdir .
+confdir /system/etc/privoxy
 #
 #  2.2. templdir
 #  ==============
@@ -289,7 +289,7 @@ confdir .
 #      updates, you shouldn't expect templates to work with Privoxy
 #      releases other than the one they were part of, though.
 #
-#templdir .
+templdir /system/etc/privoxy/templates
 #
 #  2.3. temporary-directory
 #  =========================
@@ -610,10 +610,10 @@ logfile logfile
 #      you read the log messages, you may even be able to solve the
 #      problem on your own.
 #
-#debug     1 # Log the destination for each request Privoxy let through. See also debug 1024.
-#debug  1024 # Actions that are applied to all sites and maybe overruled later on.
-#debug  4096 # Startup banner and warnings
-#debug  8192 # Non-fatal errors
+debug     1 # Log the destination for each request Privoxy let through. See also debug 1024.
+debug  1024 # Actions that are applied to all sites and maybe overruled later on.
+debug  4096 # Startup banner and warnings
+debug  8192 # Non-fatal errors
 #
 #  3.2. single-threaded
 #  =====================
